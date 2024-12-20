@@ -1,0 +1,68 @@
+/**
+ * different styles can be found at https://tailwindcss-forms.vercel.app/
+ **/
+.form-input,
+.form-email,
+.form-select,
+.form-multiselect,
+.form-textarea {
+    @apply border border-gray-300 shadow-sm;
+
+    &:focus {
+        @apply border  ring-gray-700  ring-orange-50;
+    }
+}
+
+[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus {
+    outline: none ;
+    box-shadow: none ;
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus, .form-multiselect:focus {
+    outline: none;
+    box-shadow: none;
+}
+.bg-container {
+    outline: none;
+    box-shadow: none;
+}
+.form-checkbox:checked:focus, .form-checkbox:focus, .form-checkbox:indeterminate, .form-radio:checked:focus  {
+    @apply ring-2 ring-customOrange;
+}
+.form-checkbox:checked:focus, .form-checkout:checked .form-checkbox:focus{
+    @apply bg-customOrange
+}
+
+.form-checkbox{
+    @apply text-customOrange
+}
+[type='radio']:checked {
+    @apply  ring-customOrange bg-customOrange;
+}
+[type='radio']:checked:focus {
+    @apply bg-customOrange ring-customOrange;
+}
+[type='radio']:focus{
+    @apply ring-customOrange;
+}
+[type='radio']:checked:hover{
+    @apply bg-customOrange;
+}
+#react-checkout .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: unset !important;
+}
+#react-checkout .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: unset !important;
+}
+#react-checkout {
+    background-color: white;
+}
+#react-checkout {
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+}
+#react-checkout .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: unset !important;
+}
